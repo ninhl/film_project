@@ -1,0 +1,14 @@
+.card__wrapper{
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+.card__image{
+    border-bottom: solid 6px var(--c-secondary);
+}
+.card__image:hover{
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+}
+.card__content{
+
+}
