@@ -22,11 +22,6 @@ const settings = {
   autoplay: true,
   autoplaySpeed: 2500,
 };
-const divStyle = {
-  color: "blue",
-  backgroundImage: "url(" + filmData[1].banner + ")",
-};
-
 const MainCarousel = () => {
   return (
     <div>

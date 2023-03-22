@@ -1,0 +1,24 @@
+.card__wrapper {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  height: 100%;
+  max-height: 400px;
+  border-radius: 0 !important;
+}
+.card__image {
+}
+.card__image:hover {
+}
+.card__content {
+  padding: 15px 0;
+}
+.card__content__title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 40px;
+}
+.card__content h6 {
+  font-size: var(--fs-1);
+  word-break: break-word;
+}
