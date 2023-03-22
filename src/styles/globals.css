@@ -2,7 +2,7 @@
   --c-primary: rgb(12 34 54);
   --c-secondary: #14d0d2;
   --c-text: #000000;
-  --c-white: #FFFFFF;
+  --c-white: #ffffff;
   --c-black-2: rgb(146 166 183);
   --c-gray-1: #666;
   --c-blue: #14d0d2;
@@ -26,8 +26,9 @@
   --fw-6: bold;
   --fw-7: 800;
   --fw-8: 900;
-  --linear-gradient-1: linear-gradient(150deg, #3E37F4 0%, #7D00AC 100%);
-  --font-family: "Helvetica Neue",Helvetica,Arial,sans-serif,"Lato", "Helvetica Neue", Helvetica, sans-serif;
+  --linear-gradient-1: linear-gradient(150deg, #3e37f4 0%, #7d00ac 100%);
+  --font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, "Lato",
+    "Helvetica Neue", Helvetica, sans-serif;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -35,52 +36,176 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
   font-family: var(--font-family);
-	vertical-align: baseline;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-.css-1ps6pg7-MuiPaper-root{
+.css-1ps6pg7-MuiPaper-root {
   background-color: transparent !important;
   border-radius: 0 !important;
   box-shadow: none !important;
+}
+.slick-next {
+  right: 0 !important;
+  width: 250px !important;
+  height: 100% !important;
+}
+.slick-prev {
+  left: 0 !important;
+  width: 250px !important;
+  height: 100% !important;
+}
+.slick-prev:hover {
+  background-image: linear-gradient(to right, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.0001) 100%) !important;
+  background-repeat: repeat-x !important;
+}
+.slick-next:hover {
+  background-image: linear-gradient(to left, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.0001) 100%) !important;
+  background-repeat: repeat-x !important;
+}
+.slick-arrow {
+  z-index: 2 !important;
+}
+.slick-dots{
+  display: flex !important;
+	justify-content: center !important;
+	margin: 0 !important;
+	padding: 1rem 0 !important;
+	list-style-type: none !important;
+  z-index: 100 !important;
+  bottom: 120px !important;
+	
+}
+.slick-dots button {
+  display: block !important;
+  width: 0.7rem !important;
+  height: 0.7rem !important;
+  padding: 0 !important;
+  border: solid 1px var(--c-white) !important;
+  border-radius: 100% !important;
+  text-indent: -9999px !important;
+}
+.slick-dots li.slick-active button {
+  background-color: var(--c-blue) !important;
 }

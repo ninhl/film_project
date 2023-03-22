@@ -1,0 +1,18 @@
+.button, .whiteBtn .blackBtn{
+    padding: 13px 47px;
+    font-size: var(--fs-3);
+    border-radius: 4px;
+}
+.button:hover{
+    border: solid 1px var(--c-secondary);
+    color: var(--c-white);
+    background-color: var(--c-secondary);
+}
+.whiteBtn{
+    border: solid 1px var(--c-white);
+    color: var(--c-white);
+}
+.blackBtn{
+    border: solid 1px var(--c-text);
+    color: var(--c-text);
+}
