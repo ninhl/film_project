@@ -5,6 +5,7 @@
   --c-white: #fff;
   --c-black-2: rgb(146 166 183);
   --c-gray-1: #666;
+  --c-gray-2: #999;
   --c-blue: #14d0d2;
   --fs-0: 10px;
   --fs-1: 12px;
@@ -177,25 +178,32 @@ table {
   height: 100% !important;
 }
 .slick-prev:hover {
-  background-image: linear-gradient(to right, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.0001) 100%) !important;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.0001) 100%
+  ) !important;
   background-repeat: repeat-x !important;
 }
 .slick-next:hover {
-  background-image: linear-gradient(to left, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.0001) 100%) !important;
+  background-image: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.0001) 100%
+  ) !important;
   background-repeat: repeat-x !important;
 }
 .slick-arrow {
   z-index: 2 !important;
 }
-.slick-dots{
+.slick-dots {
   display: flex !important;
-	justify-content: center !important;
-	margin: 0 !important;
-	padding: 1rem 0 !important;
-	list-style-type: none !important;
+  justify-content: center !important;
+  margin: 0 !important;
+  padding: 1rem 0 !important;
+  list-style-type: none !important;
   z-index: 100 !important;
   bottom: 120px !important;
-	
 }
 .slick-dots button {
   display: block !important;
@@ -208,4 +216,13 @@ table {
 }
 .slick-dots li.slick-active button {
   background-color: var(--c-blue) !important;
+}
+.MuiTabs-flexContainer {
+  justify-content: center !important;
+}
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  text-decoration: none;
+  color: #14d0d2;
+  padding-bottom: 10px;
+  border-bottom: 4px solid #14d0d2;
 }

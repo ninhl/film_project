@@ -1,22 +1,28 @@
 import DefaultHeader from "@/components/Common/DefaultHeader";
 // import MovieCard from "@/components/Common/MovieCard";
-import { filmData } from "../../constants/fakeData";
-import styles from "@/styles/Home.module.css"
+import { filmData, quoteData } from "../../constants/fakeData";
+import styles from "@/styles/Home.module.css";
 import MainCarousel from "@/components/MainCarousel";
 import PeopleCard from "@/components/Common/PeopleCard";
-import DefaultButton from "@/components/Common/DefaultButton";
-import Banner from "@/components/Common/Banner";
-import SubMovieCard from "@/components/Common/SubMovieCard";
+import Quote from "@/components/Common/Quote";
+import { Box } from "@mui/material";
+import DefaultFooter from "@/components/Common/DefaultFooter";
+import ListMovieTab from "@/components/ListMoviesTab";
+import DefaultHeaderBlock from "@/components/Common/DefaultHeaderBlock";
+
 const HomePage = () => {
   return (
-    <>
+    <Box>
       <DefaultHeader />
-      <MainCarousel/>
-      {filmData.map((film)=>(
-        <SubMovieCard data={film}/>
-      ))}
-      <Banner backgroundImg="https://swank.azureedge.net/swank/prod-media/1549/01_entanywhere12_1920x1080_pi.jpg?width=1920&height=1080&mode=crop&format=webp"/>
-    </>
+      <MainCarousel />
+
+      <Quote quote={quoteData[0]} />
+      <DefaultHeaderBlock>
+        <h1>NEW & UPCOMING RELEASES</h1>
+        <ListMovieTab />
+      </DefaultHeaderBlock>
+      <DefaultFooter />
+    </Box>
   );
 };
 

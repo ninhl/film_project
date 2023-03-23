@@ -1,0 +1,14 @@
+.tabContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+}
+.tab__center{
+    
+}   
+.tab{
+    color: #666;
+    text-decoration: none;
+    padding-bottom: 14px;
+}

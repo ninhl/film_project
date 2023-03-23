@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import styles from "./styles.module.css";
 import { filmData } from "@/constants/fakeData";
 import MovieCard from "../Common/MovieCard";
+import SubCarousel from "../SubCarousel";
 interface Data {
   id?: number;
   banner?: string;

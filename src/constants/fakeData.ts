@@ -1,5 +1,20 @@
 
-
+export const quoteData = [
+    {
+        id: 1,
+        author: 'Rose Helsinger - Classics Programmer',
+        title: "Drive-in and socially distanced indoor and outdoor film screenings help students feel connected and part of a larger college community, while remaining COVID safe.",
+        desc: "Read how Florida State successfully hosted outdoor movie events this past year.",
+        img: "https://swank.azureedge.net/swank/prod-media/270589/col80352_fsu_378x543.jpg?width=378&height=543&mode=crop&format=webp"
+    },
+    {
+        id: 2,
+        author: 'Carly Ciccati, Sparkman Wharf Coordinator',
+        title: "“Guests really enjoyed being able to leave their homes and feel safe while experiencing a classic film outdoors! Movies are a great way to still activate and bring the community together while following all COVID-19 protocols.”",
+        desc: "Sparkman Wharf in Tampa Bay recently shared how they successfully hosted outdoor movie events throughout Covid-19 in our latest customer spotlight.",
+        img: "https://swank.azureedge.net/swank/prod-media/270590/sparkmanwharf_378x543.jpg?width=378&height=543&mode=crop&format=webp"
+    },
+]
 export const filmData = [
     {
         id: 1,
