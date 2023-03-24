@@ -23,7 +23,7 @@ const MovieSlider = (props: MovieSliderProps) => {
     <Box className={styles.slider__container}>
       <Slider {...settings}>
         {movieData.map((film: any) => (
-          <SubMovieCard data={film}/>
+          <SubMovieCard data={film} key={film.id}/>
         ))}
       </Slider>
     </Box>

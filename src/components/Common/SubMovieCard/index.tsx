@@ -12,8 +12,8 @@ interface Props {
 const SubMovieCard = (props: Props) => {
   const { data, handleClick } = props;
   return (
-    <Box>
-      <Card className={styles.card__wrapper} sx={{ maxWidth: 183 }} key={data.id}>
+    <Box key={data.id}>
+      <Card className={styles.card__wrapper} sx={{ maxWidth: 183 }} >
         <CardActionArea onClick={handleClick}>
           <CardMedia
             className={styles.card__image}

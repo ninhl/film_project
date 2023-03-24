@@ -3,18 +3,21 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { CardActionArea } from "@mui/material";
+import { Box, CardActionArea } from "@mui/material";
 import styles from "./styles.module.css";
-const PeopleCard = (props: any) => {
+interface PeopleCardProps {
+  data: any;
+}
+const PeopleCard = (props: PeopleCardProps) => {
   const { data } = props;
   return (
-    <div>
+    <Box className={styles.card__container}>
       <Card
         className={styles.card__wrapper}
         sx={{ maxWidth: 290 }}
         key={data.id}
       >
-        <CardActionArea>
+        <CardActionArea sx={{width: "100%", height: "100%"}}>
           <CardMedia
             className={styles.card__image}
             component="img"
@@ -32,7 +35,7 @@ const PeopleCard = (props: any) => {
           </CardContent>
         </CardActionArea>
       </Card>
-    </div>
+    </Box>
   );
 };
 

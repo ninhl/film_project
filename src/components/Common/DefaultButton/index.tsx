@@ -9,7 +9,7 @@ const DefaultButton = (props: Props) => {
     const { buttonName , handleClick ,isWhiteBtn} = props;
     return ( 
     <div>
-       <Button className={`${styles.button} ${isWhiteBtn ? styles.whiteBtn : styles.blackBtn}`} onClick={handleClick} variant="outlined">{buttonName}</Button>
+       <Button onClick={handleClick} className={`${styles.button} ${isWhiteBtn ? styles.whiteBtn : styles.blackBtn}`} variant="outlined">{buttonName}</Button>
     </div> 
     );
 }

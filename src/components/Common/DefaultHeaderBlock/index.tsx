@@ -3,6 +3,7 @@ import styles from "./styles.module.css";
 
 interface HeaderBlockProps {
     children?: React.ReactNode;
+    className?: string;
  
   }
 const DefaultHeaderBlock = (props: HeaderBlockProps) => {

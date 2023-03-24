@@ -57,5 +57,54 @@ export const filmData = [
         name: 'Swank Congratulates the Winners of the 95th Annual Oscars®',
         desc: "Discover the night's biggest winners.",
         img: 'https://swank.azureedge.net/swank/prod-media/275439/oscars2019_hch.png?width=292&height=200&mode=crop&format=webp'
-    }
+    },
+    {
+        id: 7,
+        banner: 'https://swank.azureedge.net/swank/prod-media/274878/blackpantherwakandaforever_jan23_1600x800_hc.jpg?width=1600&height=800&mode=crop&format=webp',
+        name: "‘M3GAN’ Kills It at the Box Office",
+        desc: 'The horror film earned a $30M+ opening. ',
+        img: 'https://swank.azureedge.net/swank/prod-media/274764/m3gan_584x400_hch.jpg?width=292&height=200&mode=crop&format=webp'
+    },    {
+        id: 8,
+        banner: 'https://swank.azureedge.net/swank/prod-media/274878/blackpantherwakandaforever_jan23_1600x800_hc.jpg?width=1600&height=800&mode=crop&format=webp',
+        name: "‘M3GAN’ Kills It at the Box Office",
+        desc: 'The horror film earned a $30M+ opening. ',
+        img: 'https://swank.azureedge.net/swank/prod-media/274764/m3gan_584x400_hch.jpg?width=292&height=200&mode=crop&format=webp'
+    },    {
+        id: 9,
+        banner: 'https://swank.azureedge.net/swank/prod-media/274878/blackpantherwakandaforever_jan23_1600x800_hc.jpg?width=1600&height=800&mode=crop&format=webp',
+        name: "‘M3GAN’ Kills It at the Box Office",
+        desc: 'The horror film earned a $30M+ opening. ',
+        img: 'https://swank.azureedge.net/swank/prod-media/274764/m3gan_584x400_hch.jpg?width=292&height=200&mode=crop&format=webp'
+    },    {
+        id: 10,
+        banner: 'https://swank.azureedge.net/swank/prod-media/274878/blackpantherwakandaforever_jan23_1600x800_hc.jpg?width=1600&height=800&mode=crop&format=webp',
+        name: "‘M3GAN’ Kills It at the Box Office",
+        desc: 'The horror film earned a $30M+ opening. ',
+        img: 'https://swank.azureedge.net/swank/prod-media/274764/m3gan_584x400_hch.jpg?width=292&height=200&mode=crop&format=webp'
+    },    {
+        id: 11,
+        banner: 'https://swank.azureedge.net/swank/prod-media/274878/blackpantherwakandaforever_jan23_1600x800_hc.jpg?width=1600&height=800&mode=crop&format=webp',
+        name: "‘M3GAN’ Kills It at the Box Office",
+        desc: 'The horror film earned a $30M+ opening. ',
+        img: 'https://swank.azureedge.net/swank/prod-media/274764/m3gan_584x400_hch.jpg?width=292&height=200&mode=crop&format=webp'
+    },    {
+        id: 12,
+        banner: 'https://swank.azureedge.net/swank/prod-media/274878/blackpantherwakandaforever_jan23_1600x800_hc.jpg?width=1600&height=800&mode=crop&format=webp',
+        name: "‘M3GAN’ Kills It at the Box Office",
+        desc: 'The horror film earned a $30M+ opening. ',
+        img: 'https://swank.azureedge.net/swank/prod-media/274764/m3gan_584x400_hch.jpg?width=292&height=200&mode=crop&format=webp'
+    },    {
+        id: 13,
+        banner: 'https://swank.azureedge.net/swank/prod-media/274878/blackpantherwakandaforever_jan23_1600x800_hc.jpg?width=1600&height=800&mode=crop&format=webp',
+        name: "‘M3GAN’ Kills It at the Box Office",
+        desc: 'The horror film earned a $30M+ opening. ',
+        img: 'https://swank.azureedge.net/swank/prod-media/274764/m3gan_584x400_hch.jpg?width=292&height=200&mode=crop&format=webp'
+    },    {
+        id: 14,
+        banner: 'https://swank.azureedge.net/swank/prod-media/274878/blackpantherwakandaforever_jan23_1600x800_hc.jpg?width=1600&height=800&mode=crop&format=webp',
+        name: "‘M3GAN’ Kills It at the Box Office",
+        desc: 'The horror film earned a $30M+ opening. ',
+        img: 'https://swank.azureedge.net/swank/prod-media/274764/m3gan_584x400_hch.jpg?width=292&height=200&mode=crop&format=webp'
+    },
 ]
