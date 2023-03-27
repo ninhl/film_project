@@ -9,20 +9,42 @@ import MovieCard from "../Common/MovieCard";
 interface SubCarouselProps{
   movieData: any;
 }
+function SampleNextArrow(props: any) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "red" }}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props: any) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "green" }}
+      onClick={onClick}
+    />
+  );
+}
 const settings = {
+  dots: true,
   infinite: true,
-  speed: 500,
-  slidesToShow: 4,
+  slidesToShow: 3,
   slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2500,
+  nextArrow: <SampleNextArrow />,
+  prevArrow: <SamplePrevArrow />
 };
+
 const SubCarousel = (props: SubCarouselProps) => {
   const {movieData} = props;
   return (
     <Box className={styles.slider__container}>
       <Slider {...settings}>
-        {movieData.map((film: any) => (
+        {movieData?.map((film: any) => (
           <MovieCard data={film}/>
         ))}
       </Slider>

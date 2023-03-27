@@ -39,7 +39,7 @@ const HomePage = () => {
   return (
     <Box>
       <DefaultHeader />
-      <MainCarousel />
+      <MainCarousel movieData={filmData}/>
       <DefaultHeaderBlock className={styles.profile__block}>
         <h1 ref={ref} className={styles.headerBlock__title}>
           MARKETS WE SERVE

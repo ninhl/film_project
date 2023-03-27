@@ -4,15 +4,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from "./styles.module.css";
 import Box from "@mui/material/Box";
-import { filmData } from "@/constants/fakeData";
-import MovieCard from "../Common/MovieCard";
-import SubCarousel from "../SubCarousel";
-interface Data {
-  id?: number;
-  banner?: string;
-  name?: string;
-  desc?: string;
-  img?: string;
+
+interface MainCarouselProps {
+  movieData: any;
 }
 const settings = {
   infinite: true,
@@ -23,11 +17,12 @@ const settings = {
   autoplay: true,
   autoplaySpeed: 2500,
 };
-const MainCarousel = () => {
+const MainCarousel = (props: MainCarouselProps) => {
+  const { movieData } = props;
   return (
     <Box>
       <Slider {...settings}>
-        {filmData.map((film) => (
+        {movieData?.map((film) => (
           <Box key={film.id}>
             <Box
               style={{ backgroundImage: "url(" + film.banner + ")" }}
@@ -41,7 +36,6 @@ const MainCarousel = () => {
           </Box>
         ))}
       </Slider>
-      <SubCarousel movieData={filmData}/>
     </Box>
   );
 };

@@ -223,7 +223,7 @@ table {
 }
 .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
   text-decoration: none;
-  color: #14d0d2;
+  color: var(--c-secondary);
   padding-bottom: 10px;
-  border-bottom: 4px solid #14d0d2;
+  border-bottom: 4px solid var(--c-secondary);
 }
