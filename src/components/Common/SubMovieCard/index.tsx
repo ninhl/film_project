@@ -5,6 +5,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea,Box } from "@mui/material";
 import styles from "./styles.module.css";
+import getImage from "@/constants/baseURL";
 interface Props {
   data?: any;
   handleClick?: () => void;
@@ -19,15 +20,15 @@ const SubMovieCard = (props: Props) => {
             className={styles.card__image}
             component="img"
             height="280"
-            image={data.img}
+            image={getImage.originalImage(data.poster_path)}
             alt="green iguana"
           />
           <CardContent className={styles.card__content}>
             <Typography className={styles.card__content__title} gutterBottom variant="h5" component="div">
-              {data.name}
+              {data.title}
             </Typography>
             <Typography variant="h6" color="text.secondary">
-              {data.desc}
+              {data.overview}
             </Typography>
           </CardContent>
         </CardActionArea>

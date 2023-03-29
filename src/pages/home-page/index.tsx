@@ -11,16 +11,19 @@ import ListMovieTab from "@/components/ListMoviesTab";
 import DefaultHeaderBlock from "@/components/Common/DefaultHeaderBlock";
 import DefaultButton from "@/components/Common/DefaultButton";
 import Banner from "@/components/Common/Banner";
-import React, { useRef, useState } from "react";
+import { apiClient } from "../../services/serviceFetch";
+import { useQuery } from "react-query";
+import React, { useRef, useState, useEffect } from "react";
 import { SliceArr } from "../../utils/SliceArr";
+import { useNavigateService } from "@/services/navigate";
 const HomePage = () => {
+  const navigateService = useNavigateService();
   const ref = useRef<HTMLDivElement>(null);
   const [toggleShow, setToggleShow] = useState({
     isShowMore: false,
     buttonName: "Show more",
   });
-  console.log(toggleShow);
-
+  const [peopleData, setPeopleData] = useState([]);
   const [numberToShow, setNumberToShow] = useState<number>(6);
   const onShowMore = (ref: any) => {
     setToggleShow({ isShowMore: !toggleShow.isShowMore, buttonName: "Hide" });
@@ -35,11 +38,19 @@ const HomePage = () => {
       ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
+  const {
+    isLoading,
+    isError,
+    data: people,
+    error,
+  } = useQuery("people", apiClient.fetchApiPeoplePopular,{
+    refetchOnWindowFocus: false,
+  });
 
   return (
     <Box>
       <DefaultHeader />
-      <MainCarousel movieData={filmData}/>
+      <MainCarousel movieData={filmData} />
       <DefaultHeaderBlock className={styles.profile__block}>
         <h1 ref={ref} className={styles.headerBlock__title}>
           MARKETS WE SERVE
@@ -48,8 +59,8 @@ const HomePage = () => {
           Swank brings more movies to more people in more places than anyone.
         </p>
         <Box className={styles.listCard}>
-          {SliceArr(filmData, numberToShow).map((film: any) => (
-            <PeopleCard data={film} />
+          {SliceArr(people?.data?.results, numberToShow)?.map((people: any) => (
+            <PeopleCard data={people} key={people.id} />
           ))}
         </Box>
         <DefaultButton
@@ -63,6 +74,12 @@ const HomePage = () => {
       <DefaultHeaderBlock>
         <h1 className={styles.headerBlock__title}>NEW & UPCOMING RELEASES</h1>
         <ListMovieTab />
+        <DefaultButton
+          handleClick={() => {
+            navigateService.navigate("/up-coming");
+          }}
+          buttonName="Show All"
+        />
       </DefaultHeaderBlock>
       <Banner backgroundImg="https://swank.azureedge.net/swank/prod-media/13021/01_experience1920x1080_pi.jpg?width=1920&height=1080&mode=crop&format=webp" />
       <Quote quote={quoteData[0]} />
